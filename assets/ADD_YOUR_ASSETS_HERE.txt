@@ -1,0 +1,16 @@
+UPLOAD YOUR MEDIA FILES INTO THIS FOLDER.
+
+Use these exact filenames:
+birthday-boy-original.jpg
+prince.png
+princess.png
+01-hug.mp4
+02-horse-riding.mp4
+03-working-together.mp4
+04-badminton.mp4
+05-go-karting.mp4
+06-camping.mp4
+07-target-practice.mp4
+
+Keep the birthday boy's original photo unchanged.
+Add your own generated MP4 clips; videos are not included.

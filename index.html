@@ -1,52 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My King — A Birthday Wish</title><link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d12">
+  <title>For My King | Syed Ali Abbas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="sparkles" aria-hidden="true"></div>
-<header><span class="crown">♛</span><span>MADE WITH LOVE</span><span class="crown">♛</span></header>
-<main>
-<section class="hero">
-<p class="eyebrow">A LITTLE WORLD, MADE JUST FOR YOU</p>
-<h1>Happy 28th Birthday,<br><em>My King</em></h1>
-<p class="name">SYED ALI ABBAS · 01 DECEMBER</p>
-<div class="portrait"><img src="assets/birthday-boy-original.jpg" alt="Birthday boy's original photograph"></div>
-<p class="intro">Today is a celebration of you — your heart, your strength, and all the beautiful chapters still waiting for you.</p>
-<button id="startBtn">Enter your birthday world ✨</button>
-</section>
-<section class="panel" id="celebrate">
-<h2>A wish, just for you</h2>
-<p>May Allah bless your years with peace, good health, halal success, barakah and a heart that always finds reasons to smile. May every step ahead bring you closer to what is best for you. Ameen.</p>
-<div class="actions">
-<button id="hugBtn">Send a virtual hug 🤍</button>
-<button id="letterBtn">Open your love letter 💌</button>
-</div>
-<div id="hug" class="hidden note">A warm hug, a thousand kisses on your forehead, and all my duas wrapped around you. 🤗</div>
-<div id="letter" class="hidden letter"><h3>To My King,</h3><p>On your birthday, I pray life is gentle with you and Allah places peace in your heart, light in your path, and barakah in everything you do. I hope you never forget how deeply you are appreciated. Happy birthday, my King. 🤍</p><p class="sign">Always with duas, yours.</p></div>
-</section>
-<section class="panel">
-<h2>Make a birthday wish 🎂</h2><p>Take a breath, make a wish, and blow out the candles.</p>
-<div class="cake">🎂</div><div class="candles" id="candles">🕯️ 🕯️ 🕯️</div>
-<button id="blowBtn">Blow the candles</button><p id="candleMsg" class="note"></p>
-</section>
-<section class="panel">
-<h2>Our little adventures</h2><p>Six tiny daydreams for two hearts.</p>
-<div class="activities">
-<button data-msg="A sunset ride, gentle wind, and your hand in mine. 🐎">🐎 Horse riding together</button>
-<button data-msg="Building dreams side by side, one workday at a time. 💼">💼 Working together</button>
-<button data-msg="A little friendly competition, lots of laughter. 🏸">🏸 Playing badminton</button>
-<button data-msg="Fast turns, bright smiles, and a memory to keep. 🏎️">🏎️ Go-karting</button>
-<button data-msg="A quiet camp, a sky full of stars, and us. ⛺">⛺ Camping together</button>
-<button data-msg="A playful target challenge — teamwork first! 🎯">🎯 A shooting game</button>
-</div><p id="activityMsg" class="note">Choose an adventure to reveal its little message.</p>
-</section>
-<section class="panel">
-<h2>A tiny keepsake</h2><p>Our prince and princess, keeping this little birthday world magical.</p>
-<img class="reference" src="assets/prince-princess-reference.jpg" alt="Prince and princess character reference">
-</section>
-<footer>Made for My King · With love, duas & a little magic ♡</footer>
-</main>
-<script src="script.js"></script>
-</body></html>
+  <div class="sparkles" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">M<span>♥</span>K</a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ <span>Play piano</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">A LITTLE WORLD MADE JUST FOR YOU</p>
+      <h1>Happy Birthday,<br><em>My King</em></h1>
+      <p class="hero-name">SYED ALI ABBAS</p>
+      <p class="hero-date">1 DECEMBER 2026 <span>✦</span> 28 YEARS OF YOU</p>
+      <div class="hero-photo-wrap">
+        <img class="original-photo" src="assets/birthday-boy-original.jpg" alt="Original birthday photograph">
+      </div>
+      <p class="hero-note">Some people make the world feel softer. You are one of them.</p>
+      <a class="gold-button" href="#our-scenes">ENTER OUR LITTLE WORLD <span>↓</span></a>
+    </section>
+
+    <section class="section intro" id="our-scenes">
+      <p class="eyebrow">OUR LITTLE FAIRYTALE</p>
+      <h2>Little moments, <em>big feelings.</em></h2>
+      <p class="section-copy">A collection of the adventures, laughter and dreams I wish to share with you.</p>
+      <div class="scene-grid">
+        <article class="scene-card featured">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/01-hug.mp4" type="video/mp4"></video><span class="clip-number">CLIP 01</span></div>
+          <div class="scene-caption"><h3>A Hug That Says Everything</h3><p>When words aren't enough, let this hug speak.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/02-horse-riding.mp4" type="video/mp4"></video><span class="clip-number">CLIP 02</span></div>
+          <div class="scene-caption"><h3>Our Royal Ride</h3><p>One horse, two hearts, and a little adventure.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/03-working-together.mp4" type="video/mp4"></video><span class="clip-number">CLIP 03</span></div>
+          <div class="scene-caption"><h3>Building Dreams Together</h3><p>Side by side, making plans for the future.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/04-badminton.mp4" type="video/mp4"></video><span class="clip-number">CLIP 04</span></div>
+          <div class="scene-caption"><h3>A Little Friendly Match</h3><p>Playful competition and uncontrollable laughter.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/05-go-karting.mp4" type="video/mp4"></video><span class="clip-number">CLIP 05</span></div>
+          <div class="scene-caption"><h3>Fast Hearts, Faster Karts</h3><p>Racing you, and still choosing your team.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/06-camping.mp4" type="video/mp4"></video><span class="clip-number">CLIP 06</span></div>
+          <div class="scene-caption"><h3>Under a Thousand Stars</h3><p>A quiet night, a warm fire, and you.</p></div>
+        </article>
+        <article class="scene-card">
+          <div class="video-frame"><video controls playsinline preload="metadata" loop poster="assets/prince.png"><source src="assets/07-target-practice.mp4" type="video/mp4"></video><span class="clip-number">CLIP 07</span></div>
+          <div class="scene-caption"><h3>Our Aim: More Memories</h3><p>A playful target-practice moment at a safe range.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="letter">
+      <p class="eyebrow">SOMETHING FROM MY HEART</p>
+      <h2>A letter for <em>you.</em></h2>
+      <div class="letter-card">
+        <div class="letter-seal">M ♥ K</div>
+        <p class="letter-teaser">A few words I wanted you to keep...</p>
+        <button class="gold-button" id="openLetter" type="button">OPEN YOUR LETTER ✉</button>
+        <div class="letter-content" id="letterContent" hidden>
+          <p class="script">My King,</p>
+          <p>On your birthday, I pray that life gives you reasons to smile even on the days that feel heavy. May your efforts turn into success, your worries find ease, and your heart always find peace.</p>
+          <p>Thank you for being part of my world. I hope the years ahead bring you beautiful opportunities, sincere happiness and countless moments worth remembering.</p>
+          <p class="script signoff">With love, always. ♥</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cake-section section" id="cake">
+      <p class="eyebrow">MAKE A WISH</p>
+      <h2>Twenty-eight candles, <em>one beautiful life.</em></h2>
+      <div class="cake" aria-label="Birthday cake with candles">
+        <div class="candles" id="candles"></div>
+        <div class="cake-top"></div><div class="cake-middle"></div><div class="cake-bottom"></div>
+      </div>
+      <p class="cake-hint" id="cakeHint">Take a breath and make your wish.</p>
+      <button class="gold-button" id="blowCandles" type="button">BLOW OUT THE CANDLES ✨</button>
+    </section>
+
+    <section class="dua-section section" id="duas">
+      <p class="eyebrow">MY PRAYERS FOR YOU</p>
+      <h2>May Allah bless <em>your every year.</em></h2>
+      <div class="dua-list">
+        <p>May Allah grant you good health, a peaceful heart and a life filled with barakah.</p>
+        <p>May He make every difficult path easy, accept your efforts and guide you towards what is best.</p>
+        <p>May your rizq be halal and abundant, your intentions sincere, and your days filled with gratitude.</p>
+        <p>May Allah protect you, forgive you, strengthen your imaan and grant you success in this life and the Hereafter. Ameen.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>MADE WITH LOVE</span><p>For My King <b>♥</b> 1.12.2026</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
